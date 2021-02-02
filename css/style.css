@@ -1,0 +1,210 @@
+/*Обнуление стилей*/
+* {
+   margin: 0;
+   padding: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+body {
+   line-height: 1;
+}
+
+ol,
+ul {
+   list-style: none;
+}
+
+blockquote,
+q {
+   quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+   content: "";
+   content: none;
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+.container {
+   max-width: 651px;
+   margin: 0 auto;
+   padding: 0 165px;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+}
+
+body {
+   font-family: "Roboto", sans-serif;
+   font-size: 15px;
+   line-height: 24px;
+   box-sizing: border-box;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+/* --------- Чат --------- */
+.chat {
+   width: 100%;
+   height: 757px;
+   background-image: url(../img/fon.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: flex;
+   flex-flow: column;
+}
+
+.dialog {
+   padding-bottom: 30px;
+   border-bottom: 1px solid #dbdbdb;
+   overflow-y: scroll;
+   overflow-x: hidden;
+   height: 488px;
+}
+
+.dialog__img-message {
+   padding: 20px 36px 0 15px;
+   display: flex;
+}
+
+/* --------- Картинка --------- */
+
+#image-wrapper {
+   position: relative;
+}
+.svg-background,
+.svg-image {
+   clip-path: url(#clip-triangle);
+}
+.svg-image {
+   -webkit-transition: all 0.5s ease 0.2s;
+   -moz-transition: all 0.5s ease 0.2s;
+   opacity: 1;
+   transition: all 0.5s ease 0.2s;
+}
+
+svg.clip-svg {
+   height: 45px;
+   position: absolute;
+   width: 45px;
+}
+#svg-1 {
+   left: 0px;
+   top: 0px;
+}
+
+.right-block {
+   justify-content: flex-end;
+}
+
+.dialog__img-block {
+   width: 45px;
+   height: 44px;
+   position: relative;
+   margin-right: 18px;
+}
+
+.img-right-block {
+   margin: 0 0 0 18px;
+}
+
+.dialog__svg-pentagon {
+   position: absolute;
+   width: 45px;
+   height: 44px;
+   left: 0;
+   top: 0;
+}
+
+.dialog__block-message {
+   background: #f1f3f5;
+   border-radius: 5px;
+   max-width: 100%;
+}
+
+.dialog__message {
+   padding: 13px 15px 10px 15px;
+   line-height: 24px;
+}
+
+body {
+   background-color: #e0e0e0;
+}
+
+/* --------- Дата --------- */
+
+.date {
+   margin-top: 20px;
+   display: flex;
+   align-items: center;
+}
+
+.date__line {
+   border-bottom: solid 1px #dbdbdb;
+   width: 100%;
+}
+
+.date__text {
+   width: 100%;
+   text-align: center;
+}
+
+/* --------- Отправка сообщений --------- */
+
+.sending-a-message {
+   height: 240px;
+   width: 100%;
+}
+
+.form {
+   height: 100%;
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.sending-a-message__textarea {
+   width: 590px;
+   height: 129px;
+   background: #ffffff;
+   border: 1px solid #dbdbdb;
+   border-radius: 4px;
+   outline: none;
+   resize: none;
+}
+
+.sending-a-message__block-button {
+   width: 100%;
+}
+
+.sending-a-message__button {
+   width: 144px;
+   height: 41px;
+   margin: 20px 0 0 30px;
+   background: #0f54b9;
+   box-shadow: 0px 4px 6px rgba(15, 84, 185, 0.3);
+   border-radius: 21px;
+   border: none;
+   cursor: pointer;
+}
+
+.sending-a-message__button-text {
+   font-size: 16px;
+   line-height: 24px;
+   color: #fff;
+}
